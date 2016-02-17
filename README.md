@@ -33,9 +33,6 @@ Assuming you have already installed Node...
 
     $ bower install
 
-**Start server**
-
-    node .
 
 **Update providers.json with configs for Third party login**
    
@@ -121,3 +118,8 @@ Assuming you have already installed Node...
       }
     }
 
+
+
+**Start server**
+
+    node .
