@@ -1,0 +1,8 @@
+{
+  "legacyExplorer": false,
+  "restApiRoot": "/api",
+  "host": "ec2-54-152-103-129.compute-1.amazonaws.com",
+  "port": 3000,
+  "url": "http://ec2-54-152-103-129.compute-1.amazonaws.com:3000/",
+  "cookieSecret": "246bace2-38cb-4138-85d9-0ae8160b07c8"
+}

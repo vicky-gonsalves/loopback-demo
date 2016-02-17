@@ -1,0 +1,12 @@
+{
+  "ids": {
+    "ManagerHost": 2,
+    "LoadBalancer": 1
+  },
+  "models": {
+    "ManagerHost": {
+      "193296bd-7e6a-40a4-9a8f-ec30e7df9bbe": "{\"id\":\"193296bd-7e6a-40a4-9a8f-ec30e7df9bbe\",\"host\":\"localhost\",\"port\":8701,\"actions\":[\"delete\",\"edit\",\"env-set\",\"env-get\",\"stop\",\"restart\",\"cluster-restart\",\"license-push\"],\"protocol\":\"http\",\"created\":1455699514346,\"error\":null,\"errorType\":null,\"app\":{\"name\":\"loopback-getting-started\",\"version\":null,\"port\":3001},\"processes\":{\"pids\":[{\"parentPid\":3232,\"pid\":6684,\"workerId\":0,\"listeningSockets\":[],\"isTrackingObjects\":false,\"isProfiling\":false,\"isTracing\":false,\"debugger\":{\"running\":false,\"port\":null},\"watchdogTimeout\":0,\"watchdogStallout\":0,\"isSnapshotting\":false,\"startTime\":\"2016-02-17T09:01:31.232Z\",\"stopTime\":null,\"stopReason\":\"\",\"id\":9,\"serviceInstanceId\":1},{\"parentPid\":6684,\"pid\":1124,\"workerId\":2,\"listeningSockets\":[{\"addressType\":4,\"address\":\"0.0.0.0\",\"port\":3001}],\"isTrackingObjects\":false,\"isProfiling\":false,\"isTracing\":false,\"debugger\":{\"running\":false,\"port\":null},\"watchdogTimeout\":0,\"watchdogStallout\":0,\"isSnapshotting\":false,\"startTime\":\"2016-02-17T09:01:54.173Z\",\"stopTime\":null,\"stopReason\":\"\",\"id\":10,\"serviceInstanceId\":1}]},\"$$hashKey\":\"object:149\",\"isHostProblem\":true}"
+    },
+    "LoadBalancer": {}
+  }
+}

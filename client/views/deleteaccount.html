@@ -1,0 +1,28 @@
+<div ng-include="'views/navbar.html'"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>Delete My Account</h1>
+    </div>
+    <div class="col-sm-12">
+      <form class="form" name="form" ng-submit="deleteAccount(form)" novalidate>
+
+        <div ng-class="{ 'has-success': form.password.$valid && submitted, 'has-error': form.password.$invalid && submitted }" class="form-group">
+          <label>Password</label>
+
+          <input type="password" name="password" class="form-control" ng-model="user.password" required/>
+
+          <p class="help-block" ng-show="form.password.$error.mongoose">
+            {{ errors.other }}
+          </p>
+
+          <p class="help-block" ng-show="(form.password.$error.required) && submitted">
+            Please enter password.
+          </p>
+        </div>
+
+        <button class="btn btn-lg btn-primary" type="submit">Delete My Account</button>
+      </form>
+    </div>
+  </div>
+</div>

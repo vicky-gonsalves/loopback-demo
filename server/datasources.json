@@ -1,0 +1,30 @@
+{
+  "mongoDs": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "loopback-demo",
+    "username": "",
+    "password": "",
+    "name": "mongoDs",
+    "connector": "mongodb"
+  },
+  "gmail": {
+    "name": "gmail",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "smtp",
+        "host": "smtp.gmail.com",
+        "secure": true,
+        "port": 465,
+        "tls": {
+          "rejectUnauthorized": false
+        },
+        "auth": {
+          "user": "xxxxxx88@xxxx.com",
+          "pass": "xxxxxxxxx"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+<div ng-include="'views/navbar.html'"></div>
+
+<header id="banner" class="hero-unit">
+  <div class="container">
+    <h1>Welcome to Loopback Demo</h1>
+  </div>
+</header>
+<div class="container">
+  <div class="row">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <div class="alert alert-success" role="alert" ng-if="flashMsg">{{flashMsg}}</div>
+
+
+    <div class="row" ng-if="currentUser().provider">
+      <div class="col-lg-4 btn-group col-md-offset-4" ng-if="currentUser().id">
+        <div class="col-md-12"><a href="/link/facebook" class="btn btn-social btn-facebook btn-block" ng-if="!isLinkedToFacebook"> <i class="fa fa-facebook"></i>Link Facebook Account</a></div>
+        <div class="col-md-12"><a href="/link/google" class="btn btn-social btn-google btn-block" ng-if="!isLinkedToGoogle"><i class="fa fa-google-plus"></i>Link Google Account</a></div>
+      </div>
+    </div>
+
+    <div class="col-lg-12  btn-group" ng-if="!currentUser().id">
+      <div class="col-md-6"><a ui-sref="login" class="btn btn-block btn-default btn-lg">Login</a></div>
+      <div class="col-md-6"><a ui-sref="signup" class="btn btn-block btn-default btn-lg">Sign Up</a></div>
+    </div>
+
+    <div ng-if="currentUser().id">
+      User Info:
+      <pre>
+        {{currentUser()}}
+      </pre>
+    </div>
+  </div>
+</div>
